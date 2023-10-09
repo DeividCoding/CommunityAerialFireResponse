@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Bold.ttf">
+            <string>Rubik-Bold</string>
+        </array>
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="communityaerial" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonSOS" destination="C3W-7O-pmU" id="fU6-ne-76C"/>
+                <outlet property="labelLocation" destination="u4I-11-WOG" id="t05-z6-J10"/>
+                <outlet property="labelLocationStatus" destination="q3y-k6-xtk" id="iet-cK-uMc"/>
+                <outlet property="labelMeters" destination="s4b-WI-dNq" id="o4c-ED-B7z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBlackPhoneNumbers" destination="PDy-Tp-INA" id="p1R-2j-PD9"/>
+                <outlet property="viewCircle" destination="0Ob-Lg-x2g" id="170-S8-XKx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1F-n9-2a9">
+                    <rect key="frame" x="0.0" y="58.999999999999993" width="393" height="88.333333333333314"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="269-yS-c8p">
+                            <rect key="frame" x="20" y="20.000000000000004" width="353" height="48.333333333333343"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4I-11-WOG">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="18"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3y-k6-xtk">
+                                    <rect key="frame" x="0.0" y="28" width="353" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="269-yS-c8p" firstAttribute="top" secondItem="w1F-n9-2a9" secondAttribute="top" constant="20" id="EEH-aH-uQX"/>
+                        <constraint firstAttribute="bottom" secondItem="269-yS-c8p" secondAttribute="bottom" constant="20" id="dfj-7j-vup"/>
+                        <constraint firstAttribute="trailing" secondItem="269-yS-c8p" secondAttribute="trailing" constant="20" id="iUa-fJ-ly6"/>
+                        <constraint firstItem="269-yS-c8p" firstAttribute="leading" secondItem="w1F-n9-2a9" secondAttribute="leading" constant="20" id="xHD-cw-eiz"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMERGENCY NUMBERS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TE-4D-LVa">
+                    <rect key="frame" x="50" y="167.33333333333334" width="80" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="qSV-r9-dzb"/>
+                        <constraint firstAttribute="width" constant="80" id="zVJ-LD-zka"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDy-Tp-INA">
+                    <rect key="frame" x="29" y="217.33333333333337" width="122" height="258"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-64-PZk">
+                    <rect key="frame" x="49" y="237.33333333333337" width="82" height="218"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lfP-Vp-JwF">
+                            <rect key="frame" x="20.333333333333332" y="0.0" width="41.333333333333343" height="59.333333333333336"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_policia" translatesAutoresizingMaskIntoConstraints="NO" id="r0O-Wg-Y6l">
+                                    <rect key="frame" x="3.3333333333333428" y="0.0" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="BsQ-1p-xUL"/>
+                                        <constraint firstAttribute="height" constant="35" id="gJE-x2-CW5"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POLICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1h-sD-ZA5">
+                                    <rect key="frame" x="0.0" y="44.999999999999972" width="41.333333333333336" height="14.333333333333336"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pe9-PQ-YPx">
+                            <rect key="frame" x="4.6666666666666643" y="79.333333333333343" width="72.666666666666686" height="59.333333333333343"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_ambulancia" translatesAutoresizingMaskIntoConstraints="NO" id="t7V-sx-QiK">
+                                    <rect key="frame" x="19.000000000000007" y="0.0" width="35" height="35"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AMBULANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q25-pa-700">
+                                    <rect key="frame" x="0.0" y="45" width="72.666666666666671" height="14.333333333333336"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bt9-ss-rfI">
+                            <rect key="frame" x="0.0" y="158.66666666666666" width="82" height="59.333333333333343"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bombero" translatesAutoresizingMaskIntoConstraints="NO" id="1t7-se-jKf">
+                                    <rect key="frame" x="23.666666666666671" y="0.0" width="35" height="35"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIREFIGHTERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGC-gS-ptW">
+                                    <rect key="frame" x="0.0" y="45" width="82" height="14.333333333333336"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="t7V-sx-QiK" firstAttribute="height" secondItem="r0O-Wg-Y6l" secondAttribute="height" id="7v7-wj-qWW"/>
+                        <constraint firstItem="1t7-se-jKf" firstAttribute="height" secondItem="r0O-Wg-Y6l" secondAttribute="height" id="Qbo-UA-NJS"/>
+                        <constraint firstItem="1t7-se-jKf" firstAttribute="width" secondItem="r0O-Wg-Y6l" secondAttribute="width" id="xdw-YL-RLR"/>
+                        <constraint firstItem="t7V-sx-QiK" firstAttribute="width" secondItem="r0O-Wg-Y6l" secondAttribute="width" id="ynm-T4-Lr9"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycX-1u-Ztg">
+                    <rect key="frame" x="343" y="397.33333333333331" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="9Ll-z2-VJJ"/>
+                        <constraint firstAttribute="width" constant="50" id="c6s-gv-Hmv"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="ic_fire"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzn-hb-hLc">
+                    <rect key="frame" x="29" y="217.33333333333334" width="122" height="79.333333333333343"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="actionPolice:" destination="-1" eventType="touchUpInside" id="MXd-2F-xy4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSC-Y1-Qjo">
+                    <rect key="frame" x="29" y="316.66666666666669" width="122" height="59.333333333333314"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="actionAmbulance:" destination="-1" eventType="touchUpInside" id="wnW-vm-bmI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tg1-FA-SPm">
+                    <rect key="frame" x="29" y="396" width="122" height="79.333333333333314"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="actionFireFighter:" destination="-1" eventType="touchUpInside" id="i15-Qr-poo"/>
+                    </connections>
+                </button>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ob-Lg-x2g">
+                    <rect key="frame" x="193" y="147.33333333333337" width="200" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="SjB-jb-cSr"/>
+                        <constraint firstAttribute="width" constant="200" id="Ue8-g0-uKh"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JdZ-Xf-4TI">
+                    <rect key="frame" x="213" y="212.33333333333337" width="160" height="170"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caution! You are approximately [X] meters away from a fire." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4b-WI-dNq">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="140"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="140" id="SD2-2P-fHb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="17"/>
+                            <color key="textColor" systemColor="systemRedColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtQ-l2-JPb">
+                            <rect key="frame" x="0.0" y="149.99999999999997" width="160" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="DPk-GF-fOo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="10"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title=" [More information]"/>
+                            <connections>
+                                <action selector="actionMoreInformation:" destination="-1" eventType="touchUpInside" id="eeN-k9-NJM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3W-7O-pmU">
+                    <rect key="frame" x="333" y="147.33333333333334" width="60" height="50"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Xk5-RN-cv8"/>
+                        <constraint firstAttribute="height" constant="50" id="g8p-E9-hOj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="SOS"/>
+                    <connections>
+                        <action selector="actionSOS:" destination="-1" eventType="touchUpInside" id="Gi3-MO-hKB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkw-Ir-g5p">
+                    <rect key="frame" x="193" y="447.33333333333331" width="200" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="m4i-KS-3kt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="13"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="REPORT FIRE">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="PDy-Tp-INA" firstAttribute="top" secondItem="YAB-64-PZk" secondAttribute="top" constant="-20" id="0Zz-PR-fJF"/>
+                <constraint firstItem="kkw-Ir-g5p" firstAttribute="leading" secondItem="0Ob-Lg-x2g" secondAttribute="leading" id="3gs-aH-xg2"/>
+                <constraint firstItem="PDy-Tp-INA" firstAttribute="bottom" secondItem="YAB-64-PZk" secondAttribute="bottom" constant="20" id="4vg-z7-Apg"/>
+                <constraint firstItem="C3W-7O-pmU" firstAttribute="top" secondItem="0Ob-Lg-x2g" secondAttribute="top" id="5ZY-AK-ipY"/>
+                <constraint firstItem="0TE-4D-LVa" firstAttribute="top" secondItem="w1F-n9-2a9" secondAttribute="bottom" constant="20" id="6cE-9q-13b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="w1F-n9-2a9" secondAttribute="trailing" id="7wQ-ET-3T1"/>
+                <constraint firstAttribute="trailing" secondItem="0Ob-Lg-x2g" secondAttribute="trailing" id="8Ns-qq-gQ3"/>
+                <constraint firstItem="kkw-Ir-g5p" firstAttribute="top" secondItem="0Ob-Lg-x2g" secondAttribute="bottom" id="AKO-nT-U79"/>
+                <constraint firstItem="0Ob-Lg-x2g" firstAttribute="top" secondItem="w1F-n9-2a9" secondAttribute="bottom" id="D3k-kp-O87"/>
+                <constraint firstItem="ycX-1u-Ztg" firstAttribute="bottom" secondItem="0Ob-Lg-x2g" secondAttribute="bottom" id="DHm-H2-9D0"/>
+                <constraint firstItem="PDy-Tp-INA" firstAttribute="centerX" secondItem="0TE-4D-LVa" secondAttribute="centerX" id="Eq7-wE-f5E"/>
+                <constraint firstItem="fzn-hb-hLc" firstAttribute="bottom" secondItem="lfP-Vp-JwF" secondAttribute="bottom" id="FdK-De-cua"/>
+                <constraint firstItem="hSC-Y1-Qjo" firstAttribute="bottom" secondItem="Pe9-PQ-YPx" secondAttribute="bottom" id="H82-96-RLZ"/>
+                <constraint firstItem="hSC-Y1-Qjo" firstAttribute="leading" secondItem="PDy-Tp-INA" secondAttribute="leading" id="Jgw-IF-z0s"/>
+                <constraint firstItem="ycX-1u-Ztg" firstAttribute="trailing" secondItem="0Ob-Lg-x2g" secondAttribute="trailing" id="RNx-YR-T7H"/>
+                <constraint firstItem="tg1-FA-SPm" firstAttribute="leading" secondItem="PDy-Tp-INA" secondAttribute="leading" id="SnV-HJ-osI"/>
+                <constraint firstItem="PDy-Tp-INA" firstAttribute="trailing" secondItem="YAB-64-PZk" secondAttribute="trailing" constant="20" id="T3w-To-3Vg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kkw-Ir-g5p" secondAttribute="trailing" id="TBz-dU-u8w"/>
+                <constraint firstItem="PDy-Tp-INA" firstAttribute="top" secondItem="0TE-4D-LVa" secondAttribute="bottom" id="ToH-xj-lTe"/>
+                <constraint firstItem="w1F-n9-2a9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VKC-MG-yIo"/>
+                <constraint firstItem="tg1-FA-SPm" firstAttribute="trailing" secondItem="PDy-Tp-INA" secondAttribute="trailing" id="VN0-iH-vaZ"/>
+                <constraint firstItem="C3W-7O-pmU" firstAttribute="trailing" secondItem="0Ob-Lg-x2g" secondAttribute="trailing" id="ZsY-lX-xee"/>
+                <constraint firstItem="PDy-Tp-INA" firstAttribute="leading" secondItem="YAB-64-PZk" secondAttribute="leading" constant="-20" id="dcL-wm-tQY"/>
+                <constraint firstItem="tg1-FA-SPm" firstAttribute="bottom" secondItem="PDy-Tp-INA" secondAttribute="bottom" id="e2O-Mp-S0n"/>
+                <constraint firstItem="w1F-n9-2a9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ey5-tf-Jhf"/>
+                <constraint firstItem="JdZ-Xf-4TI" firstAttribute="leading" secondItem="0Ob-Lg-x2g" secondAttribute="leading" constant="20" id="fF7-7X-O4z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0TE-4D-LVa" secondAttribute="trailing" constant="263" id="fMf-oK-69E"/>
+                <constraint firstItem="hSC-Y1-Qjo" firstAttribute="top" secondItem="Pe9-PQ-YPx" secondAttribute="top" id="gG5-NE-frk"/>
+                <constraint firstItem="tg1-FA-SPm" firstAttribute="top" secondItem="bt9-ss-rfI" secondAttribute="top" id="noJ-kU-9oA"/>
+                <constraint firstItem="hSC-Y1-Qjo" firstAttribute="trailing" secondItem="PDy-Tp-INA" secondAttribute="trailing" id="ntm-MC-NJA"/>
+                <constraint firstItem="fzn-hb-hLc" firstAttribute="leading" secondItem="PDy-Tp-INA" secondAttribute="leading" id="nwU-xH-Dmg"/>
+                <constraint firstItem="JdZ-Xf-4TI" firstAttribute="centerY" secondItem="0Ob-Lg-x2g" secondAttribute="centerY" id="re9-rt-OOu"/>
+                <constraint firstItem="fzn-hb-hLc" firstAttribute="trailing" secondItem="PDy-Tp-INA" secondAttribute="trailing" id="vbH-re-FUR"/>
+                <constraint firstItem="fzn-hb-hLc" firstAttribute="top" secondItem="PDy-Tp-INA" secondAttribute="top" id="woF-sI-orX"/>
+                <constraint firstItem="JdZ-Xf-4TI" firstAttribute="trailing" secondItem="0Ob-Lg-x2g" secondAttribute="trailing" constant="-20" id="zOt-Ew-cDD"/>
+            </constraints>
+            <point key="canvasLocation" x="35.877862595419849" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_ambulancia" width="30" height="30"/>
+        <image name="ic_bombero" width="30" height="30"/>
+        <image name="ic_fire" width="34" height="34"/>
+        <image name="ic_policia" width="30" height="30"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

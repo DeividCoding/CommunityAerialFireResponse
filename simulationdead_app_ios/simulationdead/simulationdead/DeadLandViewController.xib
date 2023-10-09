@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Bold.ttf">
+            <string>Rubik-Bold</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeadLandViewController" customModule="simulationdead" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonNewSimulation" destination="0o2-QH-1lp" id="15Y-hg-mUV"/>
+                <outlet property="buttonSimulation" destination="aSJ-og-LKc" id="Cku-KJ-Tuv"/>
+                <outlet property="collectionView" destination="k7j-zc-uo1" id="aTa-h2-lHj"/>
+                <outlet property="mapView" destination="7MS-DO-dX8" id="HKr-VV-Huz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MS-DO-dX8">
+                    <rect key="frame" x="0.0" y="80" width="1366" height="944"/>
+                    <standardMapConfiguration key="preferredConfiguration"/>
+                </mapView>
+                <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="k7j-zc-uo1">
+                    <rect key="frame" x="0.0" y="80" width="1366" height="944"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="73t-9i-cns">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSJ-og-LKc">
+                    <rect key="frame" x="0.0" y="0.0" width="1366" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="owN-G1-R5u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="START SIMULATION"/>
+                    <connections>
+                        <action selector="actionStartSimulation:" destination="-1" eventType="touchUpInside" id="YWO-cl-6ct"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0o2-QH-1lp">
+                    <rect key="frame" x="1264" y="28" width="82" height="24"/>
+                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="10"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="NEW SIMULATION"/>
+                    <connections>
+                        <action selector="actionNewSimuation:" destination="-1" eventType="touchUpInside" id="5Sy-F9-aSP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="k7j-zc-uo1" firstAttribute="top" secondItem="aSJ-og-LKc" secondAttribute="bottom" id="8ZI-J1-Yyg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aSJ-og-LKc" secondAttribute="trailing" id="AvY-78-nG4"/>
+                <constraint firstItem="k7j-zc-uo1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IoD-at-3id"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k7j-zc-uo1" secondAttribute="trailing" id="KeI-BU-o5v"/>
+                <constraint firstItem="aSJ-og-LKc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ngc-2w-rvu"/>
+                <constraint firstItem="0o2-QH-1lp" firstAttribute="centerY" secondItem="aSJ-og-LKc" secondAttribute="centerY" id="Tih-XX-2Yz"/>
+                <constraint firstItem="7MS-DO-dX8" firstAttribute="top" secondItem="aSJ-og-LKc" secondAttribute="bottom" id="XPy-zk-me3"/>
+                <constraint firstItem="aSJ-og-LKc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Z2c-Cn-72v"/>
+                <constraint firstItem="7MS-DO-dX8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aAH-yU-3FT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="k7j-zc-uo1" secondAttribute="bottom" id="dh8-sE-C6w"/>
+                <constraint firstItem="0o2-QH-1lp" firstAttribute="trailing" secondItem="aSJ-og-LKc" secondAttribute="trailing" constant="-20" id="lEu-rJ-vWF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7MS-DO-dX8" secondAttribute="trailing" id="nk5-H9-V13"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7MS-DO-dX8" secondAttribute="bottom" id="oBC-nG-CfP"/>
+            </constraints>
+            <point key="canvasLocation" x="36" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

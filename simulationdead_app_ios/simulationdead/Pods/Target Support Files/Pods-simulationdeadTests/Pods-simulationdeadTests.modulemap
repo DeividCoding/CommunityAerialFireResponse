@@ -1,0 +1,6 @@
+framework module Pods_simulationdeadTests {
+  umbrella header "Pods-simulationdeadTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

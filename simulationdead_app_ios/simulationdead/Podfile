@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+# platform :ios, '9.0'
+
+target 'simulationdead' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for simulationdead
+    pod 'lottie-ios'
+    pod 'Alamofire'
+
+
+
+  target 'simulationdeadTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'simulationdeadUITests' do
+    # Pods for testing
+  end
+
+end

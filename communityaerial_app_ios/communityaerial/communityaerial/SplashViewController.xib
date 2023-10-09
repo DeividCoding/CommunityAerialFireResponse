@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="communityaerial" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="mud-LC-up8">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PtU-zg-Rto">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1jb-sY-Vla">
+                    <rect key="frame" x="71.666666666666686" y="301" width="250" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="aMf-Lm-3sa"/>
+                        <constraint firstAttribute="width" constant="250" id="eIB-DD-oQX"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IN COLABORATION WITH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="an4-X0-RHT">
+                    <rect key="frame" x="135" y="674.66666666666663" width="123.33333333333331" height="13.333333333333371"/>
+                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_space_apps" translatesAutoresizingMaskIntoConstraints="NO" id="JZE-Ge-Lwz">
+                    <rect key="frame" x="146.66666666666666" y="698" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Dsv-jN-OGW"/>
+                        <constraint firstAttribute="width" constant="100" id="yJY-Wo-Gyd"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mud-LC-up8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6GF-lF-HL5"/>
+                <constraint firstItem="JZE-Ge-Lwz" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="88P-wl-3dx"/>
+                <constraint firstItem="PtU-zg-Rto" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8hE-wh-wnZ"/>
+                <constraint firstItem="JZE-Ge-Lwz" firstAttribute="top" secondItem="an4-X0-RHT" secondAttribute="bottom" constant="10" id="8iZ-bI-26y"/>
+                <constraint firstItem="mud-LC-up8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="E1v-FW-9gm"/>
+                <constraint firstItem="an4-X0-RHT" firstAttribute="centerX" secondItem="JZE-Ge-Lwz" secondAttribute="centerX" id="EA8-Lr-92w"/>
+                <constraint firstItem="1jb-sY-Vla" firstAttribute="centerX" secondItem="PtU-zg-Rto" secondAttribute="centerX" id="Kok-zR-AZN"/>
+                <constraint firstItem="PtU-zg-Rto" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YDc-5Q-OPy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JZE-Ge-Lwz" secondAttribute="bottom" constant="20" id="fc2-Uv-Swz"/>
+                <constraint firstItem="1jb-sY-Vla" firstAttribute="centerY" secondItem="PtU-zg-Rto" secondAttribute="centerY" id="mJB-Os-Zt2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PtU-zg-Rto" secondAttribute="trailing" id="qEA-Q9-0EW"/>
+                <constraint firstAttribute="bottom" secondItem="PtU-zg-Rto" secondAttribute="bottom" id="qas-qE-bvq"/>
+                <constraint firstAttribute="bottom" secondItem="mud-LC-up8" secondAttribute="bottom" id="qio-TS-zO9"/>
+                <constraint firstItem="mud-LC-up8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="tGd-Kh-kfJ"/>
+            </constraints>
+            <point key="canvasLocation" x="36" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="308" height="265"/>
+        <image name="logo_space_apps" width="344" height="336"/>
+        <image name="wallpaper" width="390" height="844"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
